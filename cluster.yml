@@ -6,6 +6,7 @@ metadata:
   zones : us-east-1a,us-east-1b,us-east-1d
 vpc:
   id: vpc-8fb771e9
+  
 nodeGroups:
   - name: node-1
     instanceType: t2.micro
