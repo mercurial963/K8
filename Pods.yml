@@ -12,3 +12,19 @@ spec:
         - name: web
           containerPort: 80
           protocol: TCP
+metadata:
+  name: busybox
+  image: busybox
+spec:
+  containers:
+  - name: busybox
+    image: busybox:1.28
+    command:
+      - sleep
+      - "3600"
+    resource:
+      limit:
+        memory: "10Mi"
+        cpu: "100m"
+    imagePullPolicy: IfNotPresent
+  restartPolicy: Always
