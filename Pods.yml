@@ -22,8 +22,8 @@ spec:
     command:
       - sleep
       - "3600"
-    resource:
-      limit:
+    resources:
+      limits:
         memory: "10Mi"
         cpu: "100m"
     imagePullPolicy: IfNotPresent
