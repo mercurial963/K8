@@ -3,17 +3,17 @@ kind: ClusterConfig
 metadata:
   name: basic-cluster
   region: ap-southeast-1
-
+  zones : us-east-1a,us-east-1b,us-east-1d
+vpc:
+  id: vpc-8fb771e9
 nodeGroups:
   - name: node-1
     instanceType: t2.micro
     desiredCapacity: 1
     volumeSize: 30
-    ssh:
-      publicKeyPath: ssh-rsa AAAAB3NzaC1yc2EAAAABJQAAAQEArnXwIrWBR6iBEa+UA6XWxvWOqZpe9cw8cLyDqNCFzo0Vx+09k3oqvscNrurPK2Sf2ERbZOiDTt45ioSmdP5CGMFYhJb9mo4DV9jeN9XTMF0tFXKpw0O+Wh/qO86/xDTWcUL9Krf2x4IjqyCcZtKdZljYONJ0ts9V0vgnCZ9dogJbOYp6XcgWo1i6NERLp8Yws0f7N6iweEyD/8nf6KQMRN/7cirnnVCkgjJSwYFlZSVis2v851h//FGio6hrBxBb7ku2pIbuXJsl2DYqk9M/6LKCvcI/t01v56B/kUl0KSadF6GZ20YWoyO2bO9QBCKFVf5P7gdq17Isk2lBMBVigQ== rsa-key-20210605
+ 
   - name: node-2
     instanceType: t2.micro
     desiredCapacity: 1
     volumeSize: 30
-    ssh:
-      publicKeyPath: ssh-rsa AAAAB3NzaC1yc2EAAAABJQAAAQEArnXwIrWBR6iBEa+UA6XWxvWOqZpe9cw8cLyDqNCFzo0Vx+09k3oqvscNrurPK2Sf2ERbZOiDTt45ioSmdP5CGMFYhJb9mo4DV9jeN9XTMF0tFXKpw0O+Wh/qO86/xDTWcUL9Krf2x4IjqyCcZtKdZljYONJ0ts9V0vgnCZ9dogJbOYp6XcgWo1i6NERLp8Yws0f7N6iweEyD/8nf6KQMRN/7cirnnVCkgjJSwYFlZSVis2v851h//FGio6hrBxBb7ku2pIbuXJsl2DYqk9M/6LKCvcI/t01v56B/kUl0KSadF6GZ20YWoyO2bO9QBCKFVf5P7gdq17Isk2lBMBVigQ== rsa-key-20210605
+    
