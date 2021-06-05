@@ -4,6 +4,7 @@ metadata:
   name: static-web
   labels:
     role: myrole
+    app : web
 spec:
   containers:
     - name: web
