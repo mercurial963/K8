@@ -17,12 +17,12 @@ metadata:
   image: busybox
 spec:
   containers:
-  - name: busybox
-    image: busybox:1.28
-    command:
-      - sleep
-      - "3600"
-    resources:
-      limits:
-        memory: "10Mi"
-        cpu: "100m"
+    - name: busybox
+      image: busybox:1.28
+      command:
+        - sleep
+        - "3600"
+      resources:
+        limits:
+          memory: "10Mi"
+          cpu: "100m"
